@@ -1,0 +1,11 @@
+{
+  "name": "SlimeJavascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mguay22/SlimeJavascript.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
