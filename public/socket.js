@@ -1,4 +1,4 @@
-const socket = io('http://localhost:9000');
+const socket = io('https://slimejavascript.herokuapp.com');
 
 socket.on('keyEvent', (keysDown) => {
     otherUserKeysDown = keysDown;
