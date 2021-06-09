@@ -45,7 +45,7 @@ input[type='checkbox'] {
   margin-right: 1em;
 }
 </style>
-<script type="text/javascript" src="Input.js"></script>
+<script type="text/javascript" src="dist/KeyListener.js"></script>
 <script type="text/javascript" src="SlimeAI.js"></script>
 <script type="text/javascript">
 
@@ -632,7 +632,7 @@ var GAME_STATE_SHOW_WINNER = 5;
     menuDiv.style.width  = '750px';
     menuDiv.style.height = '375px';
 
-    menuDiv.style.background = "#ca6 url('sky2.jpg') no-repeat";
+    menuDiv.style.background = "#ca6 url('assets/images/sky2.jpg') no-repeat";
     contentDiv.appendChild(menuDiv);
 
     // Create options menu div
@@ -650,36 +650,36 @@ var GAME_STATE_SHOW_WINNER = 5;
     slimeRight = newLegacySlime(false,100,'#f00');
 
     var localSkyImage = new Image();
-    localSkyImage.src = 'sky2.jpg';
+    localSkyImage.src = 'assets/images/sky2.jpg';
     localSkyImage.onload = function() {
       backImages['sky'] = this;
     }
     var localCaveImage = new Image();
-    localCaveImage.src = 'cave.jpg';
+    localCaveImage.src = 'assets/images/cave.jpg';
     localCaveImage.onload = function() {
       backImages['cave'] = this;
     }
     var sunsetImage = new Image();
-    sunsetImage.src = 'sunset.jpg';
+    sunsetImage.src = 'assets/images/sunset.jpg';
     sunsetImage.onload = function() {
       backImages['sunset'] = this;
     }
 
     var localBallImage = new Image();
-    localBallImage.src = 'vball.png';
+    localBallImage.src = 'assets/images/vball.png';
     localBallImage.onload = function() {
       ballImage = this;
     }
 
     greenSlimeImage = new Image();
-    greenSlimeImage.src = 'slime175green.png';
+    greenSlimeImage.src = 'assets/images/slime175green.png';
     /*
     greenSlimeImage.onload = function() {
       slimeLeft.img = this;
     }
     */
     redSlimeImage = new Image();
-    redSlimeImage.src = 'slime175red.png';
+    redSlimeImage.src = 'assets/images/slime175red.png';
     /*
     redSlimeImage.onload = function() {
       slimeRight.img = this;
